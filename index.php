@@ -1,47 +1,20 @@
 <?php
+include 'components/header.php';
+include 'components/card.php';
 
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-
-if (!isset($_GET['page'])) {
-    header("Location: index.php?page=home");
-    exit;
-}
+// Fetch API
+$pokemonData = file_get_contents("https://canalti.com.br/api/pokemons.json");
+$pokemonJson = json_decode($pokemonData, true);
+$pokemons = $pokemonJson['pokemon'];
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Learning PHP</title>
-</head>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <?php foreach ($pokemons as $pokemon): ?>
+        <?php renderCard($pokemon); ?>
+    <?php endforeach; ?>
+</div>
 
-<body>
-
-    <?php include 'navbar.php'; ?>
-    <main>
-        <?php
-        // Página padrão
-        $pagina = isset($_GET['page']) ? $_GET['page'] : 'home';
-
-        // Caminho da página interna
-        $caminho = "pages/" . $pagina . ".php";
-
-        // Verifica se o arquivo existe
-        if (file_exists($caminho)) {
-            include $caminho;
-        } else {
-            echo "<p>Página não encontrada.</p>";
-        }
-        ?>
-    </main>
-
-
-    <?php include 'footer.php'; ?>
-
-
+</main>
 </body>
 
 </html>
