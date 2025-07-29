@@ -1,7 +1,7 @@
 services:
   - type: web
-    name: meu-projeto-php
+    name: php-app
     env: docker
-    plan: free
-    dockerfilePath: ./Dockerfile
     branch: main
+    dockerfilePath: ./Dockerfile
+    plan: free
