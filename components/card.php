@@ -36,7 +36,7 @@ function getTypeColor($type)
 
 <?php function renderCard($pokemon)
 { ?>
-    <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-200 cursor-pointer">
+    <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-200 cursor-pointer">
         <img src="<?= $pokemon['img'] ?>" alt="<?= $pokemon['name'] ?>" class="w-32 h-32 object-contain mb-4" />
         <div class="flex flex-col justify-center items-center">
             <span class="text-[10px] text-gray-500"><?= $pokemon['num'] ?></span>
