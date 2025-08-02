@@ -19,7 +19,7 @@
                     <img src="assets/php.svg" alt="Logo" class="w-10 h-10" />
                 </a>
             </div>
-            <form method="GET" class="sm:w-1/4 md:w-1/3">
+            <form method="GET" class="sm:w-1/4 md:w-1/3 lg:w-1/4 relative">
                 <input
                     type="text"
                     name="search"
