@@ -19,7 +19,7 @@ if ($search !== '') {
 }
 ?>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-3 mb-10 mx-10">
     <?php foreach ($pokemons as $pokemon): ?>
         <?php renderCard($pokemon); ?>
     <?php endforeach; ?>
