@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100 min-h-screen flex flex-col">
+<body class="bg-gray-100 min-h-screen flex flex-col scroll-smooth">
     <header class="bg-gray-300 bg-opacity-50 shadow-[0_6px_10px_-4px_rgba(0,0,0,0.2)] p-4 fixed w-full z-10">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-2 opacity-70 hover:opacity-100 transition-opacity">
