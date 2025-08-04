@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -42,7 +42,4 @@
         </div>
     </header>
 
-    <!-- Espaço compensando a navbar fixa -->
-    <div class="h-28"></div>
-
-    <main class="container mx-auto flex-grow p-4">
+    <main class="container mx-auto flex-grow pt-36 md:pt-28s">
